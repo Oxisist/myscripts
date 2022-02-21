@@ -1,7 +1,7 @@
 game.StarterGui:SetCore(
         "SendNotification",
         {
-            Title = "Enjoy, Made by chriss 1313",
+            Title = "PooHub",
             Text = "Prefix is ., Check console for commands"
         }
     )
