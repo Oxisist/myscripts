@@ -4,6 +4,7 @@ pcall(function() _G["poohub"]:Disconnect() end)
 
 if getfenv().rconsoleprint then
 	getfenv().rconsoleprint("\n\nThank you for using PooHub!")
+    getfenv().rconsoleprint("\nEnjoy your time.")
 	getfenv().rconsoleprint([[
 	
 	.id - Shows you the ID being played
@@ -11,12 +12,12 @@ if getfenv().rconsoleprint then
 	.rj - Rejoins
 	.tp - Sets the time position
 	.tpa - Restarts audio
-	.re - Refreshes your avatar
-	.off - Turns off lowhold
+	.re - Refreshes your avatar(NOT WORKING)
+	.off - Turns off audio
 	.mute - Mutes the server
 	.gtools - Grabs tools
 	.hop - Serverhops (NOT WORKING)
-	.lowhold - Low hold for boombox gears
+	.lowhold - Low hold for boombox gears (Reset to fix)
 	]])
 end
 
@@ -93,9 +94,8 @@ _G["poohub"] = LocalPlayer.Chatted:connect(function(message)
 				end
 			end
 		end
-	elseif string.sub(message,1,3) == ".re" then
+    elseif string.sub(message,1,3) == ".re" then
 		return S.Players.Character:BreakJoints()
-    end
 	elseif string.sub(message,1,4) == ".off" then
 		for _,v in pairs(S.Players:GetPlayers()) do
 			if v ~= LocalPlayer then
