@@ -4,7 +4,6 @@ pcall(function() _G["poohub"]:Disconnect() end)
 
 if getfenv().rconsoleprint then
 	getfenv().rconsoleprint("\n\nThank you for using PooHub!")
-    getfenv().rconsoleprint("\nEnjoy your tim")
 	getfenv().rconsoleprint([[
 	
 	.id - Shows you the ID being played
