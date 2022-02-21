@@ -11,7 +11,7 @@ if getfenv().rconsoleprint then
 	.rj - Rejoins
 	.tp - Sets the time position
 	.tpa - Restarts audio
-	.re - Refreshes your avatar
+	.re - Refreshes your avatar(NOT WORKING)
 	.off - Turns off lowhold
 	.mute - Mutes the server
 	.gtools - Grabs tools
