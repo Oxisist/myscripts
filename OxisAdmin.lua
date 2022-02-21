@@ -10,7 +10,7 @@ local charr = game:GetService("Players").LocalPlayer.Character
 local players = game:GetService("Players"):GetPlayers()
 local gameid = game.PlaceId
 
-print("\nYour script executed, Commands are rj bp gtools id tpa re off mute lowhold :)")
+print("\nYour script executed, Commands are rj bp gtools id tpa re off mute lowhold hop:)")
 
 plr.Chatted:connect(function(message)
     if message:sub(1,3) == ".id" then
@@ -144,6 +144,10 @@ plr.Chatted:connect(function(message)
                 v.Handle.CFrame = plr.Character.Head.CFrame
             end
         end
+    end
+    
+    if message:sub(1,3) == ".hop" then
+        game:GetService("TeleportService"):Teleport(gameid, game:GetService("Players").LocalPlayer);
     end
     
     if message:sub(1,8) == ".lowhold" then
