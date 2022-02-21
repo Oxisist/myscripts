@@ -6,17 +6,17 @@ if getfenv().rconsoleprint then
 	getfenv().rconsoleprint("\n\nThank you for using PooHub!")
 	getfenv().rconsoleprint([[
 	
-	.id - Command description
-	.bp - Command description
-	.rj - Command description
-	.tp - Command description
-	.tpa - Command description
-	.re - Command description
-	.off - Command description
-	.mute - Command description
-	.gtools - Command description
-	.hop - Command description
-	.lowhold - Command description
+	.id - Shows you the ID being played
+	.bp - Plays audio through your backpack client
+	.rj - Rejoins
+	.tp - Sets the time position
+	.tpa - Restarts audio
+	.re - Refreshes your avatar
+	.off - Turns off lowhold
+	.mute - Mutes the server
+	.gtools - Grabs tools
+	.hop - Serverhops (NOT WORKING)
+	.lowhold - Low hold for boombox gears
 	]])
 end
 
